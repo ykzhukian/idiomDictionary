@@ -1,0 +1,27 @@
+<import src="idiom/idiom-template.wxml" />
+
+<view class="container">
+
+  <view class="search">
+    <icon class="search-img" type="search" size="13" color="#31516B"/>
+    <input type="text" placeholder="输入成语" 
+    placeholder-class="placeholder" 
+    bindinput="onBindInput"
+    bindconfirm="onBindConfirm"
+    value="{{keyword}}"/>
+    <image wx:if="{{showSearchCancel}}" class="search-cancel-btn" src="/images/cancel.png" bindtap="onCancelSearchTap"></image>
+  </view>
+
+  <view class="no-result noResult" wx:if="{{noResult}}">
+    <text>抱歉，搜索“{{keyword}}”没有结果</text>
+  </view>
+
+  <view catchtap="onBindConfirm" class="search-btn" wx:if="{{!showResult}}">
+    <text>搜索</text>
+  </view>
+
+  <view class="result-container" wx:if="{{showResult}}">
+    <template is="idiomTemplate" data="{{...idiom, keyword:keyword}}"></template>
+  </view>
+
+</view>

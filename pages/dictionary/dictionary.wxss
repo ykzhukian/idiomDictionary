@@ -1,9 +1,16 @@
 /* dictionary.wxss */
+@import "idiom/idiom-template.wxss";
+
+.container {
+  padding: 20rpx;
+}
+
 .search {
-  background-color: #fefefe;
+  background-color: #f2f2f2;
   height: 80rpx;
   width: 100%;
   display: flex;
+  border-radius: 3px;
 }
 
 .search-img {
@@ -20,11 +27,31 @@
 .search-cancel-btn {
   height: 30rpx;
   width: 30rpx;
-  margin: auto 0 auto 10rpx;
+  margin: auto 20rpx auto 10rpx;
 }
 
 .placeholder {
   font-size: 14px;
   color: #d1d1d1;
   margin-left: 20rpx;
+  letter-spacing: 1px;
+}
+
+.search-btn {
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  padding: 10rpx 80rpx;
+  margin-top: 50rpx;
+}
+
+.search-btn text, .no-result text{
+  font-family: "Arial","Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+  color: #999;
+  vertical-align: middle;
+  letter-spacing: 2px;
+}
+
+.no-result {
+  margin-top: 30rpx;
 }

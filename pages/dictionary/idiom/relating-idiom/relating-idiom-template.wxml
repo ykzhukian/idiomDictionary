@@ -1,0 +1,10 @@
+<template name="relatingIdiomTemplate">
+  <view class="section-container">
+    <view class="section-title"><text>{{title}}</text></view>
+    <view class="relating-container">
+    <block wx:for="{{relatingIdioms}}" wx:for-item="idiom">
+      <view class="relating-idiom"><text>{{idiom}}</text></view>
+    </block>
+    </view>
+  </view>
+</template>

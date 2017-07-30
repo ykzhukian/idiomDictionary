@@ -1,12 +1,12 @@
 {
-  "pages":[
+  "pages": [
     "pages/dictionary/dictionary",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#31516B",
+    "navigationBarTitleText": "成语词典",
+    "navigationBarTextStyle": "white"
   }
 }

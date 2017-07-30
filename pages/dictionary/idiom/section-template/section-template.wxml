@@ -1,0 +1,6 @@
+<template name="sectionTemplate">
+  <view class="section-container">
+    <view class="section-title"><text>{{title}}</text></view>
+    <text>{{content}}</text>
+  </view>
+</template>

@@ -1,0 +1,19 @@
+<import src="section-template/section-template.wxml" />
+<import src="relating-idiom/relating-idiom-template.wxml" />
+
+<template name="idiomTemplate">
+  <view class="idiom-container">
+    <view><text class="idiom">{{keyword}}</text></view>
+    <view class="pinyin-wrapper"><text class="pinyin">{{pinyin}}</text></view>
+
+    <template is="sectionTemplate" data="{{content: chengyujs,title: '解释'}}"/>
+    <template is="sectionTemplate" data="{{content: from_,title: '出处'}}"/>
+    <template is="sectionTemplate" data="{{content: example,title: '例子'}}"/>
+    <template is="sectionTemplate" data="{{content: yufa,title: '语法'}}"/>
+    <template is="sectionTemplate" data="{{content: ciyujs,title: '词语解释'}}"/>
+    <template is="sectionTemplate" data="{{content: yinzhengjs,title: '引证解释'}}"/>
+
+    <template is="relatingIdiomTemplate" data="{{relatingIdioms: tongyi, title: '同义词'}}"></template>
+    <template is="relatingIdiomTemplate" data="{{relatingIdioms: fanyi, title: '反义词'}}"></template>
+  </view>
+</template> 

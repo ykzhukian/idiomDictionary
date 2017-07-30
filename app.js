@@ -8,6 +8,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    api_key: "9eecd167f0a3a6bd8b2a0ec60f004e01",
+    api_base_url: "https://v.juhe.cn/chengyu/"
   }
 })

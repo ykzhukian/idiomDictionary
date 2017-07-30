@@ -5,6 +5,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+text {
+  font-family: "Arial","Microsoft YaHei", sans-serif;
+  color: #333;
+  text-align: justify;
+}
+
+.pinyin {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  color: #999;
+  font-weight: 300;
+}
